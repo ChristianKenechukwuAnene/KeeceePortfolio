@@ -88,6 +88,17 @@ return (
           </p>
           </div>  
 
+    <div className="youtube-links">
+  <a 
+    href="https://www.youtube.com/watch?v=bFUx30mIsFE" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="youtube-simple-link"
+  >
+    Watch the Process
+  </a> 
+  </div>
+
           
         </article>
       </main>
