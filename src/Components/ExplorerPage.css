@@ -1,0 +1,198 @@
+.explorer-page{
+  max-width: 1200px; /*  prevents content from being too wide on big screens */
+  margin: 0 auto;
+  width: 100%;
+}
+ /* Hero Section */
+.explorer-header {
+  /* lighter / more see-through */
+background-color: rgba(54, 82, 69, 0.2);
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.explorer-header h1 {
+  font-family: "Oswald", Impact, sans-serif;
+  font-size: 42px;
+
+}
+
+.content h4 {
+  font-size: 1.2rem;
+  margin: 0 6px 0;
+}
+
+
+  
+
+.explorer-hero img {
+ height: 300px;
+ max-width: 50%;
+ background: #25332a;
+ margin-left: 15rem;
+ margin-top: 2rem;
+ padding: 2px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
+}
+
+
+.container h2{
+font-size:20px;
+color:var(--muted); 
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:8px;
+color: #1db954;
+}
+
+
+.content{
+font-size:1rem;
+line-height:1.7;
+color: aliceblue;
+}
+
+
+.content p{ margin:0 0 14px 0 }
+
+
+.back{
+display:inline-block;
+margin-top:12px;
+text-decoration:none;
+color: #1db954;
+}
+.explorer-page a:hover{
+  color: #d9ff00;;
+}
+
+
+@media(min-width:900px){
+.hero-video{ height:320px }
+.title{ font-size:48px }
+}
+
+.cta-text {
+  max-width: 70%;
+}
+
+.cta-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1db954;;
+}
+
+.cta-text p {
+  color: #ccc;
+  font-size: 1rem;    /* optional: make it a bit larger */
+}
+.cta-Rights h4{
+  color: rgb(152, 84, 84);
+}
+.Interactive_file-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.Score_file-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(34, 31, 31);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.Iteractive_file-btn:hover {
+  opacity: 0.8;
+}
+
+.youtube-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* keeps it responsive */
+}
+
+/* ================= EXPLORER PAGE RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .explorer-page {
+    width: 90%;
+  }
+
+  .explorer-header {
+    padding: 25px 20px;
+  }
+
+  .explorer-header h1 {
+    font-size: 34px;
+  }
+
+  .explorer-hero img {
+    max-width: 80%;
+    margin-left: 0;
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .explorer-page {
+    width: 95%;
+  }
+
+  .explorer-header {
+    padding: 20px 15px;
+  }
+
+  .explorer-header h1 {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+  }
+
+  .explorer-hero img {
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .youtube-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Interactive_file-btn,
+  .Score_file-btn {
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+}

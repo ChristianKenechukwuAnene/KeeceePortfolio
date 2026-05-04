@@ -1,0 +1,191 @@
+.ul_appPage{
+  max-width: 1200px; /*  prevents content from being too wide on big screens */
+  margin: 0 auto;
+  width: 100%;
+}
+ /* Hero Section */
+.ul_app-header {
+  /* lighter / more see-through */
+background-color: rgba(54, 82, 69, 0.2);
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.ul_app-header h1 {
+  font-family: "Oswald", Impact, sans-serif;
+  font-size: 42px;
+}
+ 
+/* ENTRANCE ANIMATION */
+.ul_app-header {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content h4 {
+  font-size: 1.2rem;
+  margin: 0 6px 0;
+}
+
+.ul_app-hero img {
+height: 300px;
+max-width: 60%;
+background: #25332a;
+margin-left: 10rem;
+margin-top: 2rem;
+padding: 2px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
+}
+
+
+.container h2{
+font-size:20px;
+color:var(--muted); 
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:8px;
+color: #1db954;
+}
+
+
+.content{
+font-size:1rem;
+line-height:1.7;
+color: aliceblue;
+}
+
+
+.content p{ margin:0 0 14px 0 }
+
+
+.back{
+display:inline-block;
+margin-top:12px;
+text-decoration:none;
+color: #1db954;
+}
+.ul_app-page a:hover{
+  color: #d9ff00;
+}
+
+
+@media(min-width:900px){
+.hero-video{ height:320px }
+.title{ font-size:48px }
+}
+
+.cta-text {
+  max-width: 70%;
+}
+
+.cta-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1db954;;
+}
+
+.cta-text p {
+  color: #ccc;
+  font-size: 1rem;    /* optional: make it a bit larger */
+}
+.cta-Rights h4{
+  color: rgb(152, 84, 84);
+}
+.ULnav_file-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.ULnav_file-btn:hover {
+  opacity: 0.8;
+}
+
+/* ================= UL APP PAGE RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .ul_appPage {
+    width: 90%;
+  }
+
+  .ul_app-header {
+    padding: 40px 20px;
+  }
+
+  .ul_app-header h1 {
+    font-size: 34px;
+  }
+
+  .ul_app-hero img {
+    max-width: 90%;
+    margin-left: 0;
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .ul_appPage {
+    width: 95%;
+  }
+
+  .ul_app-header {
+    padding: 30px 15px;
+  }
+
+  .ul_app-header h1 {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+  }
+
+  .ul_app-hero img {
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .ULnav_file-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+}

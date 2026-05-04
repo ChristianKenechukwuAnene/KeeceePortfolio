@@ -93,7 +93,12 @@ function Blog2Page(){
 
             <p>By: JAKOB NEILSEN <a style={{ color: 'green', fontStyle: 'italic' }}>Usability Engineering (1994).</a></p>
         </div>
-        <Link className="back" to="/Myblog">← Back</Link>
+        <Link className="back" to="/Myblog">
+        <button className="back-btn-green">
+        <span className="back-icon">←</span>
+        <span className="back-text">BACK</span>
+        </button>
+        </Link>
 
 
 

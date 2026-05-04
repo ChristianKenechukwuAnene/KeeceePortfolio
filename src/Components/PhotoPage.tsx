@@ -66,7 +66,12 @@ import "./PhotoPage.css";
         </section>
       </main>
 
-<Link className="back" to="/Projects">← Back to Projects</Link>
+<Link className="back" to="/Projects">
+  <button className="back-btn-green">
+  <span className="back-icon">←</span>
+  <span className="back-text">BACK</span>
+</button>
+</Link>
 
 
 {/* CTA Section */}  

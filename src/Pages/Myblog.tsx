@@ -53,7 +53,9 @@ function Myblog(){
             You’ll also discover the challenges we faced, the teamwork that made it possible,
              and my personal reflections on what I learned throughout the project.
             </p>
-            <a><Link to="/blog1">Read More</Link></a>
+            <a><Link to="/blog1"><button className="readmore-btn">
+            Read More
+            </button></Link></a>
           </div>
         </div>
 
@@ -78,9 +80,11 @@ function Myblog(){
             hese principles create interfaces that are not just visually appealing 
             but genuinely functional and user-friendly.
             </p>
-            <Link to="/blog2">Read More</Link>
-          </div>
-        </div>
+            <Link to="/blog2"><button className="readmore-btn">
+             Read More
+            </button></Link>
+           </div>
+           </div>
 
 
           {/*Third blog preview.
@@ -103,10 +107,12 @@ function Myblog(){
 
 
             </p>
-            <Link to="/blog3">Read More</Link>
-          </div>
-        </div>
-      </div>
+            <Link to="/blog3"><button className="readmore-btn">
+            Read More
+            </button></Link>
+            </div>
+           </div>
+           </div>
     </div>
 
 
@@ -116,10 +122,10 @@ function Myblog(){
     {/* CTA Section */}  
       <section className="cta">
         <div className="cta-text">
-          <h2>Let’s work together on your next project</h2>
+          <h2>Turning ideas into interactive experiences.</h2>
             <p className="italic-text">“Great projects start with a conversation. Let’s team up and turn your vision into reality.”
           </p>
-           <h4>&copy; {new Date().getFullYear()} christian Anene. <span className="Rights">All Rights Reserved.</span></h4> {/* copy right year */ }
+           <h4>&copy; {new Date().getFullYear()} christian Anene | UX/UI & Interaction Designer</h4> {/* copy right year */ }
         </div> 
       </section> 
     </div>

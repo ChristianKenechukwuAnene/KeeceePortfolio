@@ -1,12 +1,14 @@
 .smart-page{
-  width: 1200px; /*  prevents content from being too wide on big screens */
+  max-width: 1200px; /*  prevents content from being too wide on big screens */
   margin: 0 auto;
+  width: 100%;
 }
  /* Hero Section */
 .smart-header {
-  background-color: rgba(54, 82, 69, 0.4);
+  /* lighter / more see-through */
+background-color: rgba(54, 82, 69, 0.2);
   background-size: cover;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
   color: white;
   border-radius: 10px;
@@ -15,24 +17,37 @@
 .smart-header h1 {
   font-family: "Oswald", Impact, sans-serif;
   font-size: 42px;
+}
 
+/* ENTRANCE ANIMATION */
+.smart-header {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .content h4 {
   font-size: 1.2rem;
   margin: 0 6px 0;
 }
-
-
   
 
-.media-wrap {
-  width: var(--max-width);
-  max-width: 94%;
-  background: #25332a;
-  padding: 8px;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+.Smart-hero img {
+ height: 300px;
+ max-width: 60%;
+ margin-left: 15rem;
+ margin-top: 2rem;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
 }
 
 
@@ -49,7 +64,11 @@ color: #1db954;
 .content{
 font-size:1rem;
 line-height:1.7;
-color: aliceblue;
+color: aliceblue; 
+margin-top: 40px;
+margin-bottom: 40px;
+padding-left: 2rem;
+padding-right: 2rem;
 }
 
 
@@ -65,6 +84,71 @@ color: #1db954;
 .smart-page a:hover{
   color: #d9ff00;;
 }
+
+.youtube-simple-link {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  background: #194937;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  margin-bottom: 40px;
+}
+
+.youtube-simple-link:hover {
+  background: #123314;
+  transform: translateY(-2px);
+}
+
+.youtube-simple-link:active {
+  transform: translateY(0);
+}
+
+
+
+.back-btn-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 15px;
+  background: #000; /* black background */
+  border-radius: 12px;
+  border: 2px solid #00ff66; /* default green border */
+  color: #00ff66; /* default green text */
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+
+.back-btn-green .back-icon {
+  font-size: 1.3rem;
+  transition: transform 0.25s ease;
+}
+
+/* Hover: arrow slides + new highlight color */
+.back-btn-green:hover .back-icon {
+  transform: translateX(-5px);
+}
+
+.back-btn-green:hover {
+  background: #0a0a0a;
+  color: #d9ff00; /* highlight color */
+  border-color: #d9ff00;
+  box-shadow: 0 0 14px rgba(217, 255, 0, 0.6);
+}
+
+/* Active: press effect + keep highlight color */
+.back-btn-green:active {
+  transform: scale(0.97);
+  color: #d9ff00;
+  border-color: #d9ff00;
+}
+
+
 
 
 @media(min-width:900px){
@@ -84,8 +168,80 @@ color: #1db954;
 
 .cta-text p {
   color: #ccc;
-  font-size: 1rem;    /* optional: make it a bit larger */
+  font-size: 1rem; 
 }
 .cta-Rights h4{
   color: rgb(152, 84, 84);
+}
+
+
+/* ================= SMART PAGE RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .smart-page {
+    width: 90%;
+  }
+
+  .smart-header {
+    padding: 40px 20px;
+  }
+
+  .smart-header h1 {
+    font-size: 34px;
+  }
+
+  .Smart-hero img {
+    max-width: 60%;
+    margin-left: 0;
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .smart-page {
+    width: 95%;
+  }
+
+  .smart-header {
+    padding: 30px 15px;
+  }
+
+  .smart-header h1 {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 0.95rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+  }
+
+  .Smart-hero img {
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .youtube-simple-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
 }

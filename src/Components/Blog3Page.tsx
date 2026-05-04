@@ -97,8 +97,13 @@ function Blog3Page(){
 
             <p>bY KRUG STEVE: <a style={{ color: 'green', fontStyle: 'italic' }}>Don't Make Me Think (2014)</a> </p>
         </div>
-        <Link className="back" to="/Myblog">← Back</Link>
-
+        
+        <Link className="back" to="/Myblog">
+        <button className="back-btn-green">
+        <span className="back-icon">←</span>
+        <span className="back-text">BACK</span>
+        </button>
+        </Link>
 
 
 

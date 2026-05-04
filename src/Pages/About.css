@@ -2,17 +2,36 @@
 .contact-me {
   width: 1200px; /*  prevents content from being too wide on big screens */
   margin: 0 auto;
+
 }
 
  /* Hero Section */
 .hero2 {
-  background-color: rgba(54, 82, 69, 0.4);
+  /* lighter / more see-through */
+  background-color: rgba(54, 82, 69, 0.2);
   background-size: cover;
   padding: 50px;
   text-align: center;
   color: white;
   border-radius: 10px;
 }
+
+/* ENTRANCE ANIMATION */
+.hero2 {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 .bio-card {
@@ -21,7 +40,7 @@
   background-color: #0d140e;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
 }
 
 .titile {
@@ -29,18 +48,37 @@
   position: relative;
 }
 
-.bio-card img {
-  width: 140px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid #111;
-  position: absolute;
-  left: 35%;
+
+
+.name-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 4rem;
+
+}
+
+.name-logo-script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #e6ffe6;
+  letter-spacing: 1px;
+}
+
+.name-logo-surname {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100%;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: #90ec9f;
 }
 
 .data {
-  padding: 100px 50px 50px;
+  padding: 80px 50px 50px;
   text-align: center;
 }
 
@@ -157,4 +195,106 @@
 }
 .cta-Rights h4{
   color: rgb(152, 84, 84);
+}
+
+
+/* ================= FIXED RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .contact-me {
+    width: 90%;
+  }
+
+  .bio-card {
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  /* FIX NAME LOGO POSITION */
+  .name-logo {
+    position: static;
+    align-items: center;
+    padding-top: 2rem;
+  }
+
+  .data {
+    padding: 40px 20px;
+  }
+
+  .segment {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutSeg,
+  .skills1 {
+    width: 100%;
+  }
+
+  /* 🔥 FIX SIDEBAR (MAIN ISSUE) */
+  .sidebar {
+    position: static;
+    margin: 2rem auto 0;
+    width: 100%;
+  }
+}
+
+
+/* Phones */
+@media (max-width: 768px) {
+  .hero2 {
+    padding: 30px 15px;
+  }
+
+  .bio-card {
+    margin: 20px auto;
+  }
+
+  /* FIX NAME STACKING */
+  .name-logo-script {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+  }
+
+  .name-logo-surname {
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+  }
+
+  .data {
+    padding: 30px 15px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .role {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .segment {
+    flex-direction: column;
+  }
+
+  .tags1 {
+    justify-content: center;
+  }
+
+  /* 🔥 CRITICAL FIX */
+  .sidebar {
+    width: 100%;
+    margin: 20px auto 0;
+    position: static;
+  }
+
+  .icons {
+    gap: 12px;
+  }
+
+  .social-icon {
+    font-size: 24px;
+  }
 }

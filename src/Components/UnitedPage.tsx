@@ -10,20 +10,14 @@ return (
 <div className="united-page">
 
     <header className="united-header">
-         <h1>My Professional</h1>
+         <h1>You are a note - together, we are the song</h1>
        
       </header>
       
 
-<section className="hero">
-   <div className="media-wrap">  
-          <img src={united} alt="United"/>
-
-        </div>
-</section>
-
       <main className="container">
         <article className="content">
+          <div className="guardian-section">
           <h2>Rethinking Sustainability Beyond the Environment</h2>
           <p>
             Sustainability is often understood primarily in environmental terms—reducing waste,
@@ -36,7 +30,8 @@ return (
                 sustainability forms the conceptual foundation of You Are a Note, 
                 positioning the project within a human-centered vision of sustainable development.
           </p>
-
+          </div>
+           <div className="guardian-section">
           <h2>From Heartbeat to Collective Harmony</h2>
           <p>
             You Are a Note explores social sustainability through interactive audiovisual design.
@@ -48,7 +43,8 @@ return (
                 participants engage. This reflects a key principle of sustainable societies:
                  diversity does not weaken unity—it strengthens it when supported by balanced and inclusive systems.
           </p>
-
+          </div>
+          <div className="guardian-section">
           <h2>Equality Embedded in System Design</h2>
           <p>
             The installation also addresses inclusion and reduced inequalities through its internal logic.
@@ -58,17 +54,26 @@ return (
                 framework aligns with the United Nations Sustainable Development Goals, particularly SDG 3 
                 (Good Health and Well-Being) and SDG 10 (Reduced Inequalities). Rather than presenting
                  these global goals through data alone, the project transforms them into a sensory and participatory experience.
-          </p>
+           </p>
+           </div>
+          <section className="united-hero">
+          <div className="united-img">  
+          <img src={united} alt="United"/>
+
+          </div>
+            </section>
+           <div className="guardian-section">
           <p>
            <h2>A Collaborative Exploration of Belonging</h2>
-            ou Are a Note was developed as a collaborative project by a team of three members,
-             combining concept development, research, storyboard design, and presentation strategy.
+               you Are a Note was developed as a collaborative project by a team of three members,
+              combining concept development, research, storyboard design, and presentation strategy.
               Through shared creative exploration, the team aimed to design an installation that 
               communicates the importance of emotional visibility, mental wellbeing, and collective harmony.
-               The collaborative process itself reflects the project’s message: meaningful outcomes
-                emerge when diverse perspectives work together. Just as the installation requires multiple
-                 participants to achieve harmony, the project’s development relied on cooperation, shared ideas, and collective vision.
+              The collaborative process itself reflects the project’s message: meaningful outcomes
+              emerge when diverse perspectives work together. Just as the installation requires multiple
+              participants to achieve harmony, the project’s development relied on cooperation, shared ideas, and collective vision.
           </p> 
+          </div>
           <h4>link to the PDF file</h4>
           <div className="project_file">
   {/* Opens PDF in new tab */}
@@ -92,9 +97,15 @@ return (
 </div>
 
         </article>
+        
       </main>
 
-<Link className="back" to="/Projects">← Back to Projects</Link>
+<Link className="back" to="/Projects">
+  <button className="back-btn-green">
+  <span className="back-icon">←</span>
+  <span className="back-text">BACK</span>
+</button>
+</Link>
 
 
 {/* CTA Section */}  

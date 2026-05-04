@@ -141,14 +141,24 @@ function Blog1Page(){
 
           This experience has strengthened my interest in videography and visual storytelling,
            and I look forward to applying these skills in future projects.
-
             </p>
 
-            <p>Final Video Link: <a style={{ color: 'green', fontStyle: 'italic' }}>www.youtube.com/watch?v=hGXjlXMoMAo&feature=youtu.be
-             
-           </a> </p>
+          <a 
+          href="https://www.youtube.com/watch?v=hGXjlXMoMAo" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="youtube-simple-link"
+          >
+          Watch the Coffee AD
+          </a> 
         </div>
-        <Link className="back" to="/Myblog">← Back</Link>
+        
+         <Link className="back" to="/Myblog">
+        <button className="back-btn-green">
+        <span className="back-icon">←</span>
+        <span className="back-text">BACK</span>
+        </button>
+        </Link>
 
 
 

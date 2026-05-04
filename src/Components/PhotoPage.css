@@ -1,6 +1,6 @@
 /* Page wrapper */
 .photo-page {
-  width: 1200px; /*  prevents content from being too wide on big screens */
+  max-width: 1200px; /*  prevents content from being too wide on big screens */
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 16px;
@@ -182,4 +182,73 @@
 }
 .cta-Rights h4{
   color: rgb(152, 84, 84);
+}
+
+
+
+/* ================= PHOTO PAGE RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .photo-page {
+    width: 90%;
+  }
+
+  .photo-hero {
+    height: 360px;
+  }
+
+  .photo-title {
+    font-size: 44px;
+  }
+
+  .mesh {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .photo-page {
+    width: 95%;
+  }
+
+  .photo-hero {
+    height: 280px;
+  }
+
+  .photo-title {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .photo-desc {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .photo-overlay {
+    padding: 16px;
+  }
+
+  .mesh {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .container {
+    margin: 24px auto;
+    padding: 0 12px;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
 }

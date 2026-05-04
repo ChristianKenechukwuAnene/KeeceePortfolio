@@ -1,6 +1,6 @@
 //import React from 'react';
 import { Link } from "react-router-dom";
-import bash from'../assets/Bash.png';
+import laser2 from'../assets/Laser2.png';
 import './PumaPage.css';
 
 
@@ -10,90 +10,104 @@ return (
 <div className="puma-page">
 
     <header className="puma-header">
-         <h1>Aesthetic shot</h1>
+         <h1>Laser Cutting as Critical Design: Rethinking Phone Use</h1>
       </header>
 
-      
+    
 
-<section className="hero">
+      <main className="container">
+        <article className="content">
+          <div className="guardian-section">
+          <h2>What is Laser Cutting?</h2>
+          <p>
+            Laser cutting is a digital fabrication technique that uses a high-powered laser to cut, engrave,
+            or etch materials with precision. Designers create vector-based digital files that guide 
+            the laser along specific paths, allowing for accurate shapes, patterns, and details that would 
+            be difficult to achieve by hand. It works on a variety of materials, including wood, acrylic, MDF,
+            fabric, and even some metals. Laser cutting is widely used in prototyping, product design, art,
+            and architecture because it can quickly turn digital concepts into precise physical objects.
+            The process is fast, repeatable, and highly versatile.
+          </p>
+          </div>
 
-        <div className="media-wrap">  
-          <img src={bash} alt="Bash"/>
+           <div className="guardian-section">
+           <main className="container"></main>
+            <h2>Project Idea</h2>
+          <p>
+            The main goal of this project was to explore critical design using laser cutting. 
+            Instead of creating a standard phone stand focused on comfort or efficiency,
+            the aim was to design an object that encourages reflection and changes how people 
+            interact with their devices. Critical design challenges the assumption that design 
+            should always make life easier. It can provoke thought, reveal hidden behaviours,
+            or make everyday habits visible. For this project, I focused on how people often 
+            use their phones automatically, checking them quickly without thinking. The phone
+            stand was designed to slightly disrupt this habit, slowing interaction and making
+            users more aware of their behaviour. This shows how even a simple object can have
+            a meaningful impact on everyday routines.
+          </p>
+          </div>
+
+          <section className="Laser-hero">
+
+        <div className="laser-img">  
+          <img src={laser2} alt="Laser2"/>
 
         </div>
       </section>
 
-      <main className="container">
-        <article className="content">
-          <h2>Photograph Description</h2>
+            <div className="guardian-section">
+          <h2>Full Project Explanation / Step-by-Step Process</h2>
           <p>
-            This photograph was captured using a Samsung Galaxy S22, a device
-            known for its sharp detail and excellent dynamic range, which allowed 
-            me to beautifully capture the calm and reflective atmosphere of the moment.
-            I chose a longer focal length to create a soft, dreamy look—compressing the
-           background slightly while keeping the composition balanced with both the environment and the subject in harmony.
-
-           Because the lighting was natural and gentle, I kept the aperture wide to let more 
-           light into the camera, ensuring the scene remained bright and clear without losing its softness. 
-           Using a handheld shot, I selected a shutter speed fast enough to avoid motion blur while still 
-           maintaining a natural flow of light. The low ISO helped keep the image smooth and noise-free,
-            preserving the peaceful mood of the scene.
-          </p>
-
-
-          <h2>Editing Specifications</h2>
-          <p>
-           The image was later refined in Affinity Photo, where I focused on enhancing the dreamy,
-           calm quality of the photograph.
+           Through this project, I used it not just to create an object, but to explore how design can change behaviour and create meaningful experiences.
           </p>
           <ul style={{ lineHeight: "1.8" }}>
         <li>
-          Increased exposure slightly to brighten the subject and give life to the softer areas of the sky and water.
+         This project was created using a laser cutting machine, a tool that allows precise cutting and engraving
+          on materials like MDF. In this exercise, I used 4mm MDF, which was strong enough to hold structure but easy to cut and assemble.
         </li>
 
         <li>
-          Enhanced contrast to add depth and make the figure stand out gently against the natural surroundings.
+         Instead of focusing only on making a useful phone stand, I focused on critical design,
+         which means designing something that changes how people think or behave. The goal was
+         to create a phone stand that makes users more aware of how they use their phones.
         </li>
 
         <li>
-          Boosted saturation/vibrance to bring out the subtle greens, blues, and warm tones present in the environment.
+          To achieve this, I modified a basic phone stand template. I changed the angle and structure
+          of the design to make the phone slightly harder to view and interact with. This created a
+          small level of discomfort, encouraging users to slow down and think before using their phone.
         </li>
 
         <li>
-          Added a soft vignette to draw attention toward the center and create a quiet sense of focus.
+          During the design process, I worked with vector files and prepared the design carefully for cutting. 
+          I made sure the dimensions, line thickness, and cutting order were correct so the laser cutter could produce a clean and accurate result.
         </li>
         <li>
-          Applied a gentle Gaussian Blur / lens blur to the background to heighten the serene, shallow-depth-of-field effect.
+          The fabrication process was very precise. Watching the machine cut the design showed how a digital idea can quickly become a physical object.
         </li>
         <li>
-          Applied a gentle Gaussian Blur / lens blur to the background to heighten the serene, shallow-depth-of-field effect.
+          After assembling the phone stand, I tested how people interacted with it. I noticed that the design 
+          changed behaviour slightly, making users pause and adjust how they used their phone.
+          This showed that even a simple object can influence everyday habits.
+        </li>
+        <li>
+          Overall, this project helped me understand that design is not only about making things easier,
+          but also about creating experiences that make people think. It also improved my skills 
+          in laser cutting, prototyping, and connecting ideas with physical design.
         </li>
       </ul>
+      </div>
 
-          <h2>What the Picture Depicts</h2>
-          <p>
-            This photograph captures a calm, reflective moment in nature—an image that symbolizes balance,
-             self-expression, and the quiet confidence that guides my creative journey. 
-             Standing on a bridge overlooking flowing water and open skies, 
-             I am surrounded by a peaceful landscape that encourages clarity, stillness, and imagination.
-          </p>
-          <p>
-            The soft yet bright lighting mirrors my personal philosophy: simplicity can be powerful,
-             and the smallest details often tell the most meaningful stories. 
-             Just like in my drawings and designs, I try to capture authenticity, 
-             mood, and atmosphere in everything I create.
-          </p>
-          <p>
-            This picture is more than a visually appealing shot; it is a reflection
-             of who I am as both an artist and a person. Calm, observant, and inspired by 
-             the world around me, I aim to transform quiet moments into visual expression. 
-             This image represents the mindset I bring to every creative project intentional,
-              expressive, and deeply connected to the beauty found in everyday scenes.
-          </p>
+          
         </article>
       </main>
 
-<Link className="back" to="/Projects">← Back to Projects</Link>
+<Link className="back" to="/Projects">
+  <button className="back-btn-green">
+  <span className="back-icon">←</span>
+  <span className="back-text">BACK</span>
+</button>
+</Link>
 
 
 {/* CTA Section */}  

@@ -1,23 +1,49 @@
 
  /* Main container */
-.contact-container {
-  text-align: center;
-  color: #e5e5e5;
+
+ .contact-page{
   width: 1200px;
-  margin: 0 auto;  /* Centers content */
+  margin: 0 auto;
+}
+
+
+.contact-header {
+  text-align: center;
+  background-color: #0d140e;
+  border-radius: 12px;
+  width: 100%;
+  padding: 0 2rem;  
 }
  
  
  /* Hero Section */
 .hero3 {
-  background-color: rgba(54, 82, 69, 0.4);
+  background-color: rgba(54, 82, 69, 0.2);
   background-size: cover;
   padding: 50px;
   text-align: center;
   color: white;
   border-radius: 10px;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem; 
 }
+
+
+/* ENTRANCE ANIMATION */
+.hero3 {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 
 /* Header section */
@@ -32,18 +58,21 @@
   font-weight: bold;
 }
 
-.contact-header p {
+.contact-header {
   font-size: 15px;
-  color: #222;
-  max-width: 550px;
+  color: #f3ecec;
+  width: 100%;
+  max-width: 1000px;
   margin: 10px auto 40px auto;
   line-height: 1.6;
+  background-color: #080808;
 }
 
 /* Form container */
 .contact-form {
   background-color: #080808;
-  width: 400px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   padding: 30px;
   border-radius: 12px;
@@ -51,6 +80,7 @@
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 5rem;
+  box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
 }
 
 .contact-form label {
@@ -124,3 +154,80 @@
 .cta-Rights h4{
   color: rgb(152, 84, 84);
 }
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  
+  
+  .hero3 {
+    padding: 40px 20px;
+  }
+
+  .contact-form {
+    max-width: 500px;
+  }
+
+  .cta {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+}
+
+
+/* Phones */
+@media (max-width: 768px) {
+
+  .contact-page {
+    width: 100%;
+  }
+
+  .contact-container {
+    padding: 0 1rem;
+  }
+
+  .hero3 {
+    padding: 25px 15px;
+  }
+
+  .contact-header h1 {
+    font-size: 26px;
+  }
+
+  .contact-header  {
+    font-size: 14px;
+    padding: 0 0px;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 60%;
+    padding: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 13px;
+  }
+
+  .cta {
+    flex-direction: column;
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+
+}
+
+

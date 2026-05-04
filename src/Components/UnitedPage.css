@@ -1,12 +1,14 @@
 .united-page{
-  width: 1200px; /*  prevents content from being too wide on big screens */
+  max-width: 1200px; /*  prevents content from being too wide on big screens */
   margin: 0 auto;
+  width: 100%;
 }
  /* Hero Section */
 .united-header {
-  background-color: rgba(54, 82, 69, 0.4);
+  /* lighter / more see-through */
+background-color: rgba(54, 82, 69, 0.2);
   background-size: cover;
-  padding: 30px;
+  padding: 50px;
   text-align: center;
   color: white;
   border-radius: 10px;
@@ -23,16 +25,33 @@
   margin: 0 6px 0;
 }
 
+/* ENTRANCE ANIMATION */
+.united-header {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
   
 
-.media-wrap {
-  width: var(--max-width);
-  max-width: 94%;
-  background: #25332a;
-  padding: 8px;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+.united-hero img {
+  height: 300px;
+  max-width: 50%;
+ background: #25332a;
+ margin-left: 15rem;
+ margin-top: 2rem;
+ padding: 2px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
 }
 
 
@@ -101,4 +120,78 @@ color: #1db954;
 
 .project_file-btn:hover {
   opacity: 0.8;
+}
+
+
+
+
+/* ================= UNITED PAGE RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .united-page {
+    width: 90%;
+  }
+
+  .united-header {
+    padding: 40px 20px;
+  }
+
+  .united-header h1 {
+    font-size: 34px;
+  }
+
+  .united-hero img {
+    max-width: 80%;
+    margin-left: 0;
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .united-page {
+    width: 95%;
+  }
+
+  .united-header {
+    padding: 30px 15px;
+  }
+
+  .united-header h1 {
+    font-size: 26px;
+  }
+
+  .content {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .content h4 {
+    font-size: 1rem;
+  }
+
+  .united-hero img {
+    max-width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .project_file-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
 }

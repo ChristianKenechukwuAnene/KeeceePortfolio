@@ -1,99 +1,190 @@
 
  
 .my-projects {
+   /*max-width: 1200px;*/
    width: 1200px;
-   background-color: #0d140e;
-   margin: 0 auto;
-   color: #eee;
-   background-color: #0d140e;
-  
+   margin: 0 auto; 
 }
   
  /* Hero Section */
 .projects-header {
-  background-color: rgba(54, 82, 69, 0.4);
+  background-color: rgba(54, 82, 69, 0.2);
   background-size: cover;
   padding: 50px;
   text-align: center;
   color: white;
   border-radius: 10px;
 }
+
 .projects-container {
-   padding: 60px 0;
-   background-color: #0d140e;
+   padding: 0 0;
+  background: rgb(23, 24, 23); 
+   border-radius: 10px;
+}
   
+
+
+/* ENTRANCE ANIMATION */
+.projects-header {
+  animation: fadeUp 1s ease forwards;
 }
 
-/* Intro Section */
-.projects-intro {
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 60px 10%;
-  gap: 40px;
+  flex-direction: column;
+  background-color: #0f1113;
+  box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
+  color: #ffffff;
+  border-radius: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.intro-img img {
-  width: 500px; 
-  border-radius: 10px;
-}
-
-.intro-text {
-  width: 50%;
-}
-
-.intro-text h2 {
-  color: #1db954;
-  margin-bottom: 10px;
-}
-
-.intro-text p {
-  color: #ddd; 
-  line-height: 1.6; 
-}
-
-/* Services Section */
-.service {
+.row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 10%;
-  gap: 40px;
+  height: 50vh;
 }
 
-.service.reverse {
+.row.reverse {
   flex-direction: row-reverse;
 }
 
-.service-img img {
-  width: 400px;
-  border-radius: 10px;
+.text {
+  margin-bottom: 70px;
+  width: 60%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.service-text {
-  width: 50%;
+.text h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
-
-
-.service-text h2 {
-  margin-bottom: 15px;
-  color: #1db954 ;
-}
-
-.service-text p {
-  color: #ccc;
-  line-height: 1.6;
-}
-.service-text a {
+.text h1 span {
+  font-style: italic;
   color: #1db954;;
+
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cfcfcf;
+  max-width: 500px;
+}
+
+.image {
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 30px;
+
+  
+}
+
+.text a {
+  color: #1db954;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: bold;
 }
 
-
-.projects-container a:hover {
+.text a:hover {
   color: #d9ff00;
 }
 
+.image img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
 
+/* ================= PROJECTS PAGE RESPONSIVE ================= */
 
+/* Tablets */
+@media (max-width: 1200px) {
+  .my-projects {
+    width: 90%;
+  }
+
+  .projects-header {
+    padding: 40px 20px;
+  }
+
+  .text {
+    width: 55%;
+    padding: 40px;
+  }
+
+  .image {
+    width: 45%;
+  }
+
+  .row {
+    height: auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .my-projects {
+    width: 70%;
+  }
+
+  .projects-header {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .row,
+  .row.reverse {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text,
+  .image {
+    width: 100%;
+  }
+
+  .text {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 22px;
+  }
+
+  .text p {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .image {
+    height: 220px;
+    margin-top: 0;
+  }
+
+  .image img {
+    height: 100%;
+  }
+}

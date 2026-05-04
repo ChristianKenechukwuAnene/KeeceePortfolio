@@ -1,11 +1,12 @@
 
 .lasta-page{
-  width: 1200px; /*  prevents content from being too wide on big screens */
+  max-width: 1200px; /*  prevents content from being too wide on big screens */
   margin: 0 auto;
 }
  /* Hero Section */
 .lasta-header {
-  background-color: rgba(54, 82, 69, 0.4);
+  /* lighter / more see-through */
+  background-color: rgba(54, 82, 69, 0.2);
   background-size: cover;
   padding: 20px;
   text-align: center;
@@ -13,24 +14,34 @@
   border-radius: 10px;
 }
 
+.guardian-section {
+  margin-bottom: 30px;
+  padding: 2px 25px;
+  border-left: 2px solid #90EC9F;
+  border-right: 2px solid #90EC9F;
+  background-color: #141815; 
+  border-radius: 10px;
+}
 .lasta-header h1 {
   font-family: "Oswald", Impact, sans-serif;
   font-size: 40px;
 }
+
 .content h5 {
   margin: 0 auto;
   font-style: italic;
 }
 
 .lasta-hero img{
- width: var(--max-width);
- max-width: 94%;
+ height:300px;
+ width: 60%;
  background: #25332a;
- margin-left: 20rem;
- margin-top: 2rem;
- padding: 8px;
+ margin: 2rem auto;
+ display: block;
+ /*margin-top: 2rem;*/
+ padding: 2px;
  border-radius: 8px;
- box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+ box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
 }
 
 .lasta-hero h1{
@@ -40,18 +51,6 @@
 
 .artivive-link-container {
   text-align: center;
-}
-
-.artivive-image {
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-.artivive-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .container h2{
@@ -88,4 +87,90 @@ color: #1db954;
 }
 .cta-Rights h4{
   color: rgb(152, 84, 84);
+}
+
+.project_file {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.project_file-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+
+/* ================= LASTA PAGE RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .lasta-page {
+    width: 90%;
+  }
+
+  .lasta-header {
+    padding: 30px 20px;
+  }
+
+  .lasta-header h1 {
+    font-size: 32px;
+  }
+
+  .lasta-hero img {
+    width: 80%;
+    margin-left: 0;
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .lasta-page {
+    width: 95%;
+  }
+
+  .lasta-header {
+    padding: 20px 15px;
+  }
+
+  .lasta-header h1 {
+    font-size: 24px;
+  }
+
+  .content h5 {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  .lasta-hero img {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+
+  .lasta-hero h1 {
+    font-size: 20px;
+  }
+
+  /*.artivive-image {
+    width: 100%;
+    height: auto;
+  }
+*/
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
 }

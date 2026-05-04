@@ -1,4 +1,4 @@
-import keecee1 from'../assets/Keecee.png';
+
 import './About.css'; // Import the CSS file
 import { FaFacebook, FaLinkedin, FaInstagram, FaTwitter, FaPinterest, FaArtstation } from "react-icons/fa";
 
@@ -14,19 +14,20 @@ function About() {
 
      {/* Hero Section */}
       <header className="hero2">
-        <h1>ABOUT ME</h1>
+        <h1>ABOUT</h1>
        
       </header>
 
 
     <div className="bio-card">
-      <div className="title">
-        <img src={keecee1} alt="keecee1" />
-      </div>
+
+      <div className="name-logo">
+       <span className="name-logo-script">Christian Kenechukwu Anene</span>
+       <span className="name-logo-surname">UX/UI & Interaction Designer</span>
+       </div>
+
 
       <div className="data">
-        <h2 className="name">Christian Anene</h2>
-        <p className="role">UI/UX Designer</p>
 
       {/*This block contains my background story and professional journey:
         About me: a short bio introducing your design focus and style.
@@ -38,71 +39,90 @@ function About() {
           <div className="aboutSeg">
             <h3>About me</h3>
             <p>
-             A UX/UI and Motion Designer focused on building engaging, user-centric digital products. 
-             I leverage expertise in animation and motion graphics to design intuitive interfaces 
-             where every interaction is informed by usability and enhanced by purposeful motion.
+             I am a UX/UI and Interaction Designer focused on creating intuitive, user-centred 
+             experiences across digital and physical systems.My background in animation and motion
+             design allows me to approach design with a strong sense of visual storytelling and purposeful motion. 
+             I design interfaces where usability is at the core, and every interaction is considered, intentional, and meaningful.
+             I am particularly interested in how design extends beyond screens-exploring how users
+            interact with systems in real-world environments. My work often combines UX design with prototyping, 
+            using tools such as Arduino to build interactive systems that communicate information clearly and effectively.
+            I aim to create solutions that are not only visually engaging but also practical, accessible, and grounded in real user needs.
             </p>
 
-            <h3>Education</h3>
+            <h3>Education & Foundation</h3>
             <p>
-              <strong>Munster University</strong>
               <br />
-              VFX and Motion Design, 2024
+              I hold a BA (Hons) in Animation, VFX, and Motion Design from Munster Technological University, 
+              where I developed a strong foundation in visual design, storytelling, and motion.
+              </p>
+             <p> <br/>I am currently completing a Master’s degree in Interaction and Experience Design at
+               the University of Limerick, where I have expanded my focus into user-centered design,
+               interaction systems, and usability. This combination of creative and technical education allows me to approach design
+               from both an artistic and problem-solving perspective.
             </p>
 
-            <h3>Experience</h3>
+            <h3>Experience & Practice</h3>
             <p>
-              <strong>UI/UX Designer</strong>
+              <strong>UX/UI & Interaction Designer</strong>
               <br />
-              "During my masters programm, I developed a personal blog to showcase my expertise
-               in UI/UX design and front-end development. The blog features articles on design principles, 
-               tips for improving user interfaces, and my journey to becoming a successful designer.
-                I built the blog using React and CSS, focusing on a clean and minimalistic design.
-                 Although the initial version was not responsive, I later improved it to be mobile-friendly. 
-                 This project allowed me to demonstrate my technical skills and my ability to communicate 
-                 design concepts effectively, which became a talking point in interviews and helped me secure a position."
+              During my Master’s programme, I designed and developed a personal blog as a platform to explore and communicate
+               UX/UI design principles and front-end development.
+              The project involved designing user-friendly interfaces, structuring content for clarity, and implementing t
+              he system using React and CSS. I focused on creating a clean, minimal design while ensuring usability across devices by improving responsiveness for mobile users.
+              This experience strengthened my ability to translate design concepts into functional interfaces,
+               while also improving my communication of design decisions through written and visual content.
             </p>
             <p>
               <strong>Graphic Designer</strong>
               <br />
-              uring my Animation degree, I built comprehensive graphic design skills through 
-              courses in design principles, color theory, and typography. I gained proficiency
-               in Adobe Creative Suite, 2D/3D animation, and motion graphics while creating projects
-                like original short films, brand identities, and UI/UX prototypes. This training 
-                developed my technical abilities in both static and motion design, alongside
-                crucial transferable skills including creative problem-solving, visual storytelling, 
-                and collaborative project management. My education provided a strong foundation
-                in transforming concepts into polished visual products, preparing me for
-                 dynamic professional design environments.
+              During my undergraduate studies, I developed strong visual communication skills through projects in typography, colour theory,
+               layout design, and motion graphics.
+              I gained experience using Adobe Creative Suite, 2D/3D animation, and visual storytelling techniques to create engaging digital content.
+              This foundation continues to influence my approach to UX/UI design, allowing me to create interfaces that are not only functional but also visually coherent and engaging.
             </p>
           </div>
 
           <div className="skills1">
             <h3>Skills & Tools</h3>
 
-            <h4>Designing Softwares</h4>
+            <h4>UX & DESIGN</h4>
             <div className="tags1">
-              <span>Adobe Photoshop</span>
-              <span>Adobe Illustrator</span>
+              <span>User Research</span>
+              <span>Wireframing</span>
               <span>Maya 3D</span>
-              <span>WordPress</span>
+              <span>Prototyping</span>
+              <span>Interaction Design</span>
+              <span>User Flows </span>
             </div>
 
-            <h4>Languages</h4>
+            <h4>TOOLS</h4>
             <div className="tags1">
-              <span>HTML</span>
+              <span>After Effects</span>
+              <span>Illustrator</span>
+              <span>Photoshop</span>
+              <span>Adobe XD</span>
+              <span>Figma</span>
+              <span>Premiere Pro  </span>
+              <span>CapCut</span>
+            </div>
+
+             <h4>TECH</h4>
+            <div className="tags1">
+              <span>Arduino</span>
               <span>CSS</span>
               <span>JavaScript</span>
-              <span>Python</span>
-              <span>C#</span>
+              <span>Adobe XD</span>
+              <span>HTML</span>
+              <span>Power BI</span>
             </div>
 
-            <h4>Editing Softwares</h4>
+            <h4>3D & VISUAL</h4>
             <div className="tags1">
-              <span>Canva</span>
-              <span>Adobe Premiere</span>
-              <span>Adobe After Effects</span>
-              <span>CapCut</span>
+              <span>Maya</span>
+              <span>Blender</span>
+              <span>Cinema 4D </span>
+              <span>Davinci Resolve</span>
+              <span>TouchDesigner</span>
             </div>
           </div>
         </div>
@@ -183,10 +203,10 @@ function About() {
      {/* CTA Section */}  
       <section className="cta">
         <div className="cta-text">
-          <h2>Let’s work together on your next project</h2>
+          <h2>Turning ideas into interactive experiences.</h2>
             <p className="italic-text">“Great projects start with a conversation. Let’s team up and turn your vision into reality.”
           </p>
-           <h4>&copy; {new Date().getFullYear()} christian Anene. <span className="Rights">All Rights Reserved.</span></h4> {/* copy right year */ }
+           <h4>&copy; {new Date().getFullYear()} christian Anene | UX/UI & Interaction Designer</h4> {/* copy right year */ }
         </div> 
       </section> 
        </div>  

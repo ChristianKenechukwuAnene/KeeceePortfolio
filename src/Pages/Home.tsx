@@ -6,10 +6,10 @@
 
 import keecee from '../assets/Keecee.png';                                    
 import chris from '../assets/Chris.png';
-import pash from'../assets/Pash.png';
-import chris_1 from'../assets/Chris_1.png';
-import bash from'../assets/Bash.png';
-import photo from'../assets/Photo.png';
+import wear1 from'../assets/Wear1.png';
+import smart from'../assets/Smart.png';
+import air1 from'../assets/Air1.png';
+import lasta2025 from'../assets/Lasta2025.png';
 import { Link } from 'react-router-dom';
 
 
@@ -34,12 +34,13 @@ function Home() {
             I'm <span className="highlight">Christian Anene</span>
           </h2>
           <h3 className="typewriter"> 
-          <span className="typewriter-text">"UX/UI & Motion Designer"</span>
+          <span className="typewriter-text">"Interaction Designer (UX/UI)"</span>
           </h3>
           <div className="tags">
             <span>Web Developer</span>
-            <span>Designer</span>
+            <span>Arduino IDE</span>
             <span>3D</span>
+            <span>Power BI</span>
           </div>
         </div>
         <div className="chris_1">
@@ -56,9 +57,11 @@ function Home() {
         <div className="about_header">
         <h3>ABOUT ME</h3>
         <p className="about-intro">
-          A UX/UI and Motion Designer focused on building engaging, user-centric digital products.<br/> 
-          I leverage expertise in animation and motion graphics to design intuitive interfaces <br/>
-          where every interaction is informed by usability <br/>and enhanced by purposeful motion.
+           Interaction and Experience Designer with a background in Animation and VFX, combining creative <br/>
+           storytelling with user-centered design.Experienced in designing interactive systems,<br/>
+           prototyping physical and digital interfaces, and translating complex ideas <br/> into intuitive user experiences. Skilled in tools such as Figma,
+           Adobe <br/>Creative Suite, and Arduino-based prototyping, with a strong <br/>focus on usability, accessibility, and real-world problem solving.<br/>
+          Passionate about creating meaningful, human-centered <br/>experiences across digital and physical environments.
           </p>
 
 
@@ -100,7 +103,7 @@ function Home() {
 
             <div className="profile-info">
               <p><strong>FullName:</strong> Christian Kenechukwu Anene</p>
-              <p><strong>Birthday:</strong> 25 March 1996</p>
+              <p><strong>Birthday:</strong> 25 March</p>
               <p><strong>Phone:</strong> +353 877065986</p>
               <p><strong>Email:</strong><span className="Email"><em>keecee_a@yahoo.com</em></span></p>
             </div>
@@ -116,7 +119,7 @@ function Home() {
           <div className="skills">
             <h4>Skills</h4>
             <div className="skill">
-              <span>MAYA 3D</span>
+              <span>Arduino IDE</span>
               <div className="progress">
                 <div className="progress-bar" style={{ width: "90%" }}>90%</div>
               </div>
@@ -128,7 +131,7 @@ function Home() {
               </div>
             </div>
             <div className="skill">
-              <span>WordPress</span>
+              <span>HTML</span>
               <div className="progress">
                 <div className="progress-bar" style={{ width: "85%" }}>85%</div>
               </div>
@@ -165,29 +168,37 @@ function Home() {
           {/* Project Grid */}
         <div className="projects-grid">
           <div className="project-card">
-            <img src={pash} alt="pash"/>
-            <h3>My Passion</h3>
-            <Link to="lasta">Know More →</Link>
-          </div>
+            <img src={wear1} alt="wear1"/>
+            <h3>Awareness You Can Wear</h3>
+            <Link to="lasta"><button className="knowmore-btn">
+            Know More 
+            </button></Link>
+            </div>
 
           <div className="project-card">
-            <img src={chris_1} alt="chris_1"/>
-            <h3>Headshot</h3>
-            <Link to="smart">Know More →</Link>
-          </div>
+            <img src={smart} alt="smart"/>
+            <h3>3D Smart House</h3>
+            <Link to="smart"><button className="knowmore-btn">
+            Know More 
+            </button></Link>
+            </div>
 
           <div className="project-card">
-            <img src={bash} alt="bash"/>
-            <h3>Aesthetic shot</h3>
-            <Link to="/puma">Know More →</Link>
-          </div>
+            <img src={air1} alt="air1"/>
+            <h3>Air Quality Monitoring System </h3>
+            <Link to="/Air"><button className="knowmore-btn">
+            Know More 
+            </button></Link>
+            </div>
 
           <div className="project-card">
-            <img src={photo} alt="photo"/>
-            <h3>Photography</h3>
-            <Link to="photo">Know More →</Link>
+            <img src={lasta2025} alt="lasta2025"/>
+            <h3>LASTA 2025</h3>
+            <Link to="lasta2025"><button className="knowmore-btn">
+            Know More 
+            </button></Link>
+           </div>
           </div>
-        </div>
       </section>
 
 
@@ -200,10 +211,10 @@ function Home() {
         {/* CTA Section */}  
       <section className="cta">
         <div className="cta-text">
-          <h2>Let’s work together on your next project</h2>
+          <h2>Turning ideas into interactive experiences.</h2>
             <p className="italic-text">“Great projects start with a conversation. Let’s team up and turn your vision into reality.”
           </p>
-           <h4>&copy; {new Date().getFullYear()} christian Anene. <span className="Rights">All Rights Reserved.</span></h4> {/* copy right year */ }
+           <h4>&copy; {new Date().getFullYear()} christian Anene | UX/UI & Interaction Designer</h4> {/* copy right year */ }
         </div> 
       </section> 
        </div>  

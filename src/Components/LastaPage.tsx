@@ -1,6 +1,6 @@
 //import React from 'react';
 import { Link } from "react-router-dom";
-import pash from'../assets/Pash.png'; 
+import wear from'../assets/Wear.png'; 
 import './LastaPage.css';
 
 
@@ -10,91 +10,109 @@ return (
 <div className="lasta-page">
 
     <header className="lasta-header">
-         <h1> My Passion </h1>
+         <h1> When Your Hands Can’t React, Your Wearable Can. </h1>
        
       </header>
-
-      
-
-<section className="lasta-hero">
-      <div className="lasta-img">
-          <img
-            src={pash}alt="pash"/>
-        </div>
-      </section>
 
 
       <main className="container">
         <article className="content">
-          <h2>Photograph Description</h2>
+          <div className="guardian-section">
+          <h2>Project Overview</h2>
           <p>
-           This photograph was captured using a Samsung Galaxy S22, 
-           a device known for its sharp detail and excellent dynamic range, 
-           which allowed me to reveal the calm and reflective atmosphere of the moment. 
-           I chose a longer focal length to achieve a soft, dreamy look—subtly 
-           compressing the background while keeping the composition balanced between the subject and the surrounding landscape.
-
-          Because the lighting was natural and gentle, I used a wide aperture to let in more light,
-          maintaining brightness without losing softness. Since the image was taken handheld,
-          I selected a fast enough shutter speed to avoid motion blur while preserving 
-          a natural flow of light. A low ISO helped keep the image smooth, clear, and noise-free, 
-          staying true to the peaceful mood of the scene.
+           The Guardian Range Wearable is a security‑focused wristband designed to support personal safety 
+           in everyday public environments. The idea originated from a practical question: What happens when
+           someone cannot reach their self‑defence tool during a threatening situation? Many people rely on 
+           handheld items like pepper spray, but these tools assume the user has free hands and enough time to react.
+           This project challenges that assumption by proposing a hands‑free system that automatically senses 
+           proximity and alerts the wearer through clear visual signals. Using an ultrasonic sensor, LED indicators, 
+           and an LCD display, the wristband communicates three states safe, scanning, and danger allowing the user
+           to understand their surroundings instantly. The aim is not to influence emotion or create fear, 
+           but to provide a simple, accessible layer of awareness that supports real‑world security needs. 
+           The Guardian Range Wearable demonstrates how wearable technology can offer practical protection
+           when traditional tools fall short.
           </p>
+          </div>
 
-          <h2>Editing Specifications</h2>
+         <section className="lasta-hero">
+      <div className="lasta-img">
+          <img
+            src={wear}alt="wear"/>
+        </div>
+      </section>
+    
+          <div className="guardian-section">
+          <h2>Concept & Purpose</h2>
           <p>
-            The photograph was refined in Affinity Photo, where I focused on enhancing its dreamy and serene quality:
-          </p>
-           <ul style={{ lineHeight: "1.8" }}>
-        <li>
-          Increased exposure to brighten the subject and bring out the softer details in the sky and water.
-        </li>
-
-        <li>
-          Enhanced contrast to add depth and subtly separate the figure from the environment.
-        </li>
-
-        <li>
-          Boosted saturation and vibrance to highlight gentle greens, blues, and warm tones throughout the scene.
-        </li>
-
-        <li>
-          Added a soft vignette to guide the viewer’s attention toward the center of the image.
-        </li>
-        <li>
-          Applied a light Gaussian Blur / lens blur to the background to strengthen the shallow-depth-of-field effect.
-        </li>
-        <li>
-          Selectively sharpened the subject to naturally draw the eye to the moment of reflection..
-        </li>
-      </ul>
-
-
-          <h2>What the Picture Depicts</h2>
-          <p>
-            This photograph captures a calm, introspective moment in nature—an image symbolizing balance,
-             self-expression, and the quiet confidence that supports my creative journey.
-             Standing on a bridge overlooking flowing water and open skies, I am surrounded by
-              a peaceful landscape that inspires clarity, stillness, and imagination.
-          </p>
-          <p>
-          The soft yet bright lighting mirrors my personal philosophy: simplicity is powerful, 
-          and the smallest details often tell the most meaningful stories.
-           Just as I approach my drawings and designs, I aim to reflect authenticity, 
-           mood, and atmosphere in everything I create.
+            This project explores how a wearable device can automatically detect when 
+            someone or something enters the user’s personal space, offering hands‑free
+            awareness in situations where reaction time or mobility may be limited. 
+            The wristband uses an ultrasonic sensor to measure distance and communicates 
+            three clear states: green for safe, sky blue for scanning, and red for danger.
+            These visual cues allow the wearer to understand their surroundings instantly,
+            even if their hands are restrained, occupied, or unable to reach traditional 
+            self‑defence tools. By focusing on proximity detection and clear alerts, the
+            concept addresses real‑world security needs and highlights the limitations of 
+            handheld protection devices. The wearable aims to provide practical, accessible 
+            support in unpredictable environments.
            </p>
+           </div>
 
-           <p>
-            More than a visually pleasing image, this photograph is a reflection of who I am—calm, 
-            observant, inspired by the world around me, and committed to turning subtle moments into visual expression.
-             It represents the mindset I bring to every creative project: intentional, expressive,
-             and deeply connected to the beauty found in everyday scenes.
+           <div className="guardian-section">
+          <h2>Technical Build</h2>
+          <p>
+            The prototype is powered by an Arduino microcontroller, which processes distance 
+            data from the ultrasonic sensor and controls both the LED indicators and the LCD display.
+            A portable LiPo battery makes the system fully wearable and easy to test in real environments.
+            When an object enters the danger range, the LEDs switch to flashing red and the display shows a clear warning: 
+            “YOUR SAFETY IS COMPROMISED.” While the final wearable would be smaller, lighter, and more integrated, 
+            this prototype effectively demonstrates the core functionality, interaction logic, and real‑time responsiveness of the system.
            </p>
+           </div>
+
+           <div className="guardian-section">
+          <h2>Reflection & Future Development</h2>
+          <p>
+            The Guardian Range Wearable highlights the importance of hands‑free safety solutions in unpredictable situations. 
+            While the project is rooted in security rather than emotional design, it naturally raises questions about personal space,
+            awareness, and how technology can support individuals in vulnerable moments. Future development could explore miniaturisation,
+            vibration alerts, or integration with mobile devices. As a prototype, it successfully communicates the idea and opens the door
+           
+           to further innovation in wearable safety technology.
+           </p>
+           </div>
          
         </article>
+
+        <div className="project_file">
+  <a
+    href={`${import.meta.env.BASE_URL}Phisical_Computer_file.pdf`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="Phisical_Computer_file-btn view"
+  >
+    View Project File
+  </a>
+  
+  <a 
+    href="https://youtu.be/lebxcfpzxfc" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="youtube-simple-link"
+  >
+    Watch the Project Video
+  </a>
+  </div>
+
+
       </main>
 
-<Link className="back" to="/Projects">← Back to Projects</Link>
+<Link className="back" to="/Projects">
+  <button className="back-btn-green">
+  <span className="back-icon">←</span>
+  <span className="back-text">BACK</span>
+</button>
+</Link>
 
 
 {/* CTA Section */}  

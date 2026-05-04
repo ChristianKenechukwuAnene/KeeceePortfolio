@@ -1,67 +1,94 @@
+
+/* GLOBAL CONTAINER */
+.app-container {
+  width: 100%;
+}
+
+/* CENTER ALL CONTENT */
+.page-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 0rem;
+}
+
 body {
-  margin: 0 auto;             /*   Remove default body margin */
+  margin: 0;             /*   Remove default body margin */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;         /*Set dafault font family */  
   color: #eee;                    /* Set default color */
-  background: #0d140e; 
-  width:1500px; 
+  background: rgb(23, 24, 23); 
+  width:100%; 
   font-size: large; 
 }
 
 
 .main-header {
   position: sticky;
-  margin: 0;
+  /*margin: 0;*/
   top: 0;
+  width: 100%;
   background: rgba(1, 1, 1, 0.5);
-  z-index: 1000;              /* Keeps navbar above all other elements */
+  z-index: 1000; 
+  border-radius: 10px;             
 }
 
 
  /* Navbar*/
 
 .navbar {
-  width: 1200px;       
-  margin: 0 auto;             /* Center navbar contents */
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;        
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 8rem;
+  padding: 2rem 0px;   
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
 }
 
-
   .logo {
-     width: 100px;
-     height: 5px;
+     width: 13%;
+     max-width: 1200px;
+     height: 10px;
      display: flex;
      align-items: center;
      justify-content: center;
-     margin-top: 2rem;
+     object-fit: cover;   
+     
   }
 
-   img{
-    width: 200px;    /* fixed size */
-    height: auto;    /* keep ratio */
-    margin: 0 auto;  /* center */
+   img {width: 100%;
+    max-width: 1200px;   
+    height: 120px;    
+    margin: 0 auto;  
+    
   }
     
   .nav-links {
-    list-style: none;        /* Remove bullets from the nav list */ 
-    display: flex;           /* Display links in a row */
+    list-style: none;        
+    display: flex;           
     gap: 2rem;
   }
 
 
   .nav-links a{
-    text-decoration: none;   /* Removes underline from links. */
-    color: #1db954;       /* Sets link color to light green. */   
-    transition: color 0.3s;   /* Adds a smooth transition when color changes. */
+    text-decoration: none;   
+    color: #90ec9f;        
+    transition: color 0.3s;   
+    font-weight: 1px;
 }
-
-
    .nav-links a:hover{
-    color: #d9ff00;        /*yellow hover */
+    color: #d9ff00;        
   } 
 
+  .nav-links li {
+  background: #3e3f3e;;
+  color: white;
+  border: none;
+  padding: 0.1rem 1.1rem;
+  border-radius: 5px;
+  }
 
  /*Hero Section */
 
@@ -81,6 +108,23 @@ body {
 .hero-text h2 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+}
+
+
+/* ENTRANCE ANIMATION */
+.hero-text {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
  
@@ -166,7 +210,8 @@ body {
   padding: 1rem 2rem;
   background: #222;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
 }
 .about-header {
   display: flex;
@@ -349,6 +394,7 @@ body {
   border-radius: 10px;
   text-align: left;
   transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(199, 248, 208, 0.25);
 }
 
 .project-card:hover {
@@ -381,14 +427,14 @@ body {
 
 
 /* CTA Section */
-.cta {
+/*cta {
   background: #1a1a1a;
   text-align: center;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+}*/
 
 .cta-text {
   max-width: 70%;
@@ -407,3 +453,210 @@ body {
 .cta-Rights h4{
   color: rgb(152, 84, 84);
 }
+
+
+.knowmore-btn {
+  padding: 5px 10px;
+  background: #000; /* solid black */
+  color: #00ff66; /* neon green */
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 2px solid #00ff66;
+  border-radius: 8px; /* NO rounded corners */
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 102, 0.25);
+}
+
+/* Hover effect */
+.knowmore-btn:hover {
+  color: #d9ff00; /* your highlight color */
+  border-color: #d9ff00;
+  background: #0a0a0a;
+  box-shadow: 0 0 14px rgba(217, 255, 0, 0.5);
+}
+
+/* Active click effect */
+.knowmore-btn:active {
+  transform: scale(0.97);
+  color: #d9ff00;
+  border-color: #d9ff00;
+}
+
+
+
+/* ================= RESPONSIVE FIX ================= */
+
+/* Tablets & small laptops */
+@media (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+   /*.page-content {
+  margin: 0 auto;
+  padding: 0rem 1rem;
+}*/
+  .navbar,
+  .home-container {
+    width: 90%;
+    padding: 1rem 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chris_1 img {
+    margin-left: 0;
+    height: 400px;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-projects-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .view-all {
+    margin-right: 0;
+  }
+}
+
+/* HIDE toggle on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  body {
+    font-size: medium;
+  }
+
+  .page-content {
+  margin: 0 auto;
+  padding: 0rem 0em;
+}
+
+  .navbar {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    left: 31rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+
+      /* ANIMATION SETUP */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  z-index: 999;
+
+  }
+
+.nav-links.active {
+  max-height: 300px;
+  opacity: 1;
+}
+  .nav-links li {
+  background: #3e3f3e;;
+  color: white;
+  border: none;
+  padding: 0.1rem 1.1rem;
+  border-radius: 5px;
+  }
+  .nav-links a:hover{
+    color: #d9ff00;  
+  } 
+
+
+  .logo {position: absolute;
+  left: 0;
+  top: 2rem;
+  width: 100px;
+}
+
+  .hero {
+    padding: 1rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .typewriter-text {
+    font-size: 1.2rem;
+  }
+
+  .tags {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .chris_1 img {
+    height: 300px;
+  }
+
+  .about {
+    padding: 1rem;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+  }
+
+  .profile-box,
+  .skills {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: 200px;
+  }
+
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+}
+  
+
+

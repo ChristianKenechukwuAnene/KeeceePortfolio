@@ -15,11 +15,15 @@ import Contact from './Pages/Contact';
 import LastaPage from "./Components/LastaPage"; // Components detailed page...
 import PumaPage from "./Components/PumaPage";
 import SmartPage from "./Components/SmartPage";
+import Lasta2025Page from "./Components/Lasta2025Page";
 import UnitedPage from "./Components/UnitedPage";
+import UL_appPage from "./Components/UL_appPage";
+import ExplorerPage from "./Components/ExplorerPage";
 import PhotoPage from "./Components/PhotoPage";
 import Blog1Page from "./Components/Blog1Page";
 import Blog2Page from "./Components/Blog2Page";
 import Blog3Page from "./Components/Blog3Page";
+import AirPage from "./Components/AirPage";
 import my_profile from './assets/my_profile.png';
 import './App.css';
 
@@ -28,53 +32,66 @@ import './App.css';
 // import ReactDOM from 'react-dom/client';
 import { Provider } from "react-redux";
 import { store } from "./store";
-
+import { useState } from "react";
 <Provider store={store}>
   <App />
 </Provider>
 
 
  
-
 function App() {
+  const [open, setOpen] = useState(false);
   return (
     <Router>
-      {/* Navbar */}
-      <div className="main-header">
-        <nav className="navbar">
-          <div className="logo">
-            <img src={my_profile} alt="my_Profile" />
-          </div>
-          <ul className="nav-links">
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/about">ABOUT</Link></li>
-            <li><Link to="/projects">PROJECTS</Link></li>
-            <li><Link to="/contact">CONTACT</Link></li>
-            <li><Link to="/myblog">MYBLOG</Link></li>
-          </ul>
-        </nav>
+      <div className="app-container">
+
+        {/* Navbar */}
+        <div className="main-header">
+          <nav className="navbar">
+            <div className="logo">
+              <img src={my_profile} alt="my_Profile" />
+            </div>
+
+            {/*  HAMBURGER BUTTON */}
+            <div className="menu-toggle" onClick={() => setOpen(!open)}>
+          ☰
+            </div>
+
+            <ul className={`nav-links ${open ? "active" : ""}`}>
+              <li><Link to="/">HOME</Link></li>
+              <li><Link to="/about">ABOUT</Link></li>
+              <li><Link to="/projects">PROJECTS</Link></li>
+              <li><Link to="/contact">CONTACT</Link></li>
+              <li><Link to="/myblog">MYBLOG</Link></li>
+            </ul>
+          </nav>
+        </div>
+
+        {/*  Routes */}
+        <div className="page-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/myblog" element={<Myblog />} />
+            <Route path="/lasta" element={<LastaPage />} />
+            <Route path="/puma" element={<PumaPage />} />
+            <Route path="/smart" element={<SmartPage />} />
+            <Route path="/lasta2025" element={<Lasta2025Page />} />
+            <Route path="/united" element={<UnitedPage />} />
+            <Route path="/ul_app" element={<UL_appPage />} />
+            <Route path="/explorer" element={<ExplorerPage />} />
+            <Route path="/photo" element={<PhotoPage />} />
+            <Route path="/blog1" element={<Blog1Page />} />
+            <Route path="/blog2" element={<Blog2Page />} />
+            <Route path="/blog3" element={<Blog3Page />} />
+            <Route path="/Air" element={<AirPage />} />
+          </Routes>
+        </div>
+
       </div>
-
-
-      {/* Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/myblog" element={<Myblog />} />
-        <Route path="/lasta" element={<LastaPage />} />
-        <Route path="/puma" element={<PumaPage />} />
-        <Route path="/smart" element={<SmartPage />} />
-        <Route path="/united" element={<UnitedPage />} />
-        <Route path="/photo" element={<PhotoPage />} />
-        <Route path="/blog1" element={<Blog1Page />} />
-       <Route path="/blog2" element={<Blog2Page />} />
-       <Route path="/blog3" element={<Blog3Page />} />
-      </Routes>
     </Router>
-
-    
   );
 }
 
