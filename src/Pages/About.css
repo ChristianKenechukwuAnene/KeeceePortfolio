@@ -1,6 +1,7 @@
 
 .contact-me {
-  width: 1200px; /*  prevents content from being too wide on big screens */
+  width: 100%;
+  max-width: 1600px; /*  prevents content from being too wide on big screens */
   margin: 0 auto;
 
 }
@@ -133,16 +134,13 @@
 
 
 .sidebar {
-  width: 300px;
-  background-color: #59665b;
   color: #fff;
   padding: 10px;
-  margin-left: 40rem;
   text-align: center;
-  position: absolute;  
-  margin-top: -35rem;
   border-radius: 8px;
-   
+
+  width: fit-content;
+  margin: 3rem auto 0 auto;
 }
 
 /* Social section */
@@ -178,24 +176,6 @@
 
 
 
- 
-.cta-text {
-  max-width: 70%;
-}
-
-.cta-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color:  #d9ff00;
-}
-
-.cta-text p {
-  color: #ccc;
-  font-size: 1rem;    /* optional: make it a bit larger */
-}
-.cta-Rights h4{
-  color: rgb(152, 84, 84);
-}
 
 
 /* ================= FIXED RESPONSIVE ================= */

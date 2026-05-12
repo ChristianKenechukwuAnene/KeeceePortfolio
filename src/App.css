@@ -1,16 +1,20 @@
 
 /* GLOBAL CONTAINER */
+
+
 .app-container {
-  width: 100%;
+   width: 100%;
 }
 
 /* CENTER ALL CONTENT */
 .page-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0rem 0rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
+
 
 body {
   margin: 0;             /*   Remove default body margin */
@@ -28,8 +32,7 @@ body {
   top: 0;
   width: 100%;
   background: rgba(1, 1, 1, 0.5);
-  z-index: 1000; 
-  border-radius: 10px;             
+  z-index: 1000;             
 }
 
 
@@ -37,41 +40,38 @@ body {
 
 .navbar {
   width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;        
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2rem 0px;   
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  padding: 3rem 10rem;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-  .logo {
-     width: 13%;
-     max-width: 1200px;
-     height: 10px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     object-fit: cover;   
-     
-  }
+.logo {
+ flex:1;
+  align-items: center;
+}
 
-   img {width: 100%;
-    max-width: 1200px;   
-    height: 120px;    
-    margin: 0 auto;  
+.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
     
-  }
+  
     
-  .nav-links {
-    list-style: none;        
-    display: flex;           
-    gap: 2rem;
-  }
+ .nav-links {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
 
-
+.menu-toggle {
+  display: none;
+}
   .nav-links a{
     text-decoration: none;   
     color: #90ec9f;        
@@ -89,11 +89,13 @@ body {
   padding: 0.1rem 1.1rem;
   border-radius: 5px;
   }
+  
 
  /*Hero Section */
 
  .home-container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
 }
  
@@ -249,24 +251,31 @@ body {
   text-align: center;   /* optional: center the text */
 }
 
-.resume {
-  background: #1db954;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 2rem ;
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .resume-btn {
+  display: inline-block;
+  background: #1db954;
   color: #0d140e;
   font-size: larger;
+  font-weight: bold;
+
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
 }
 
-
-
-.resume:hover {
+.resume-btn:hover {
   background: #d9ff00;
 }
 
@@ -426,33 +435,7 @@ body {
 }
 
 
-/* CTA Section */
-/*cta {
-  background: #1a1a1a;
-  text-align: center;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}*/
 
-.cta-text {
-  max-width: 70%;
-}
-
-.cta-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color:  #d9ff00;
-}
-
-.cta-text p {
-  color: #ccc;
-  font-size: 1rem;    /* optional: make it a bit larger */
-}
-.cta-Rights h4{
-  color: rgb(152, 84, 84);
-}
 
 
 .knowmore-btn {
@@ -539,6 +522,12 @@ body {
   cursor: pointer;
   color: white;
 }
+ .logo {position: absolute;
+  left: 0;
+  top: 2rem;
+  width: 100px;
+}
+
 
 
 /* ================= MOBILE ================= */
@@ -575,7 +564,6 @@ body {
 
       /* ANIMATION SETUP */
   max-height: 0;
-  overflow: hidden;
   opacity: 0;
   transition: max-height 0.4s ease, opacity 0.3s ease;
   z-index: 999;
@@ -587,17 +575,18 @@ body {
   opacity: 1;
 }
   .nav-links li {
-  background: #3e3f3e;;
-  color: white;
-  border: none;
-  padding: 0.1rem 1.1rem;
+  width: 100%;
+  text-align: center;
+  background: #3e3f3e;
   border-radius: 5px;
-  }
-  .nav-links a:hover{
-    color: #d9ff00;  
-  } 
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
 
-
+.nav-links a {
+  display: block;
+  width: 100%;
+}
   .logo {position: absolute;
   left: 0;
   top: 2rem;
@@ -646,16 +635,6 @@ body {
     height: 200px;
   }
 
-  .cta {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .cta-text {
-    max-width: 100%;
-  }
 }
   
 

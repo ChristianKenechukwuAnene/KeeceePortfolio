@@ -48,7 +48,7 @@ color: #1db954;
 
 
 
-/* CTA Section */
+/* CTA Section 
 .cta {
   background: #1a1a1a;
   text-align: center;
@@ -70,9 +70,8 @@ color: #1db954;
 
 .cta-text p {
   color: #ccc;
-  font-size: 1rem;    /* optional: make it a bit larger */
+  font-size: 1rem;    /* optional: make it a bit larger 
 }
 .cta-Rights h4{
-  color: rgb(152, 84, 84);
-}
+  color: rgb(152, 84, 84);*/
 

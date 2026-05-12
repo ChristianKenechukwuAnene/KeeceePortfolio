@@ -1,20 +1,12 @@
 
  /* Main container */
 
- .contact-page{
-  width: 1200px;
+  .contact-page{
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
-
-.contact-header {
-  text-align: center;
-  background-color: #0d140e;
-  border-radius: 12px;
-  width: 100%;
-  padding: 0 2rem;  
-}
- 
  
  /* Hero Section */
 .hero3 {
@@ -62,11 +54,14 @@
   font-size: 15px;
   color: #f3ecec;
   width: 100%;
-  max-width: 1000px;
+  text-align: center;
+  max-width: 1600px;
   margin: 10px auto 40px auto;
   line-height: 1.6;
-  background-color: #080808;
+  background-color: #0d140e;
 }
+
+
 
 /* Form container */
 .contact-form {
@@ -126,25 +121,29 @@
   background-color: #c4eb00;
 }
 
+
 /* CTA Section */
 .cta {
   background: #1a1a1a;
-  text-align: center;
-  padding-left: 20rem; 
   border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
+  display: flex;
+  justify-content: center;   /* CENTER CONTENT */
+  align-items: center;
+
+  text-align: center;
+
+  padding: 3rem 2rem;
+}
 .cta-text {
-  max-width: 70%;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .cta-text h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color:  #d9ff00;
 }
 
 .cta-text p {
@@ -171,16 +170,19 @@
     max-width: 500px;
   }
 
+  
   .cta {
     flex-direction: column;
     gap: 1.5rem;
-    text-align: center;
+    text-align: center; 
   }
 
   .cta-text {
     max-width: 100%;
   }
 }
+
+
 
 
 /* Phones */
@@ -220,7 +222,7 @@
 
   .cta {
     flex-direction: column;
-    padding: 20px;
+    text-align: center;
     gap: 1rem;
   }
 

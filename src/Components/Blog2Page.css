@@ -50,31 +50,4 @@ color: #1db954;
 
 
 
-/* CTA Section */
-.cta {
-  background: #1a1a1a;
-  text-align: center;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cta-text {
-  max-width: 70%;
-}
-
-.cta-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #1db954;
-}
-
-.cta-text p {
-  color: #ccc;
-  font-size: 1rem;    /* optional: make it a bit larger */
-}
-.cta-Rights h4{
-  color: rgb(152, 84, 84);
-}
 

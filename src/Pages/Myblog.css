@@ -1,6 +1,7 @@
 
 .myblog-page {
-   width:1200px ; /* prevents content from being too wide on big screens */
+   width: 100%;
+   max-width: 1600px; /* prevents content from being too wide on big screens */
    margin: 0 auto;
    background-color: #0d140e;
    color: #eee;

@@ -91,23 +91,7 @@ color: #1db954;
 .title{ font-size:48px }
 }
 
-.cta-text {
-  max-width: 70%;
-}
 
-.cta-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #1db954;;
-}
-
-.cta-text p {
-  color: #ccc;
-  font-size: 1rem;    /* optional: make it a bit larger */
-}
-.cta-Rights h4{
-  color: rgb(152, 84, 84);
-}
 .project_file-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -184,14 +168,4 @@ color: #1db954;
     text-align: center;
   }
 
-  .cta {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    padding: 20px;
-  }
-
-  .cta-text {
-    max-width: 100%;
-  }
 }

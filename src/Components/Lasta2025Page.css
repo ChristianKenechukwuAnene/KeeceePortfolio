@@ -308,14 +308,5 @@ color: #1db954;
     width: 140px;
   }
 
-  .cta {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    padding: 20px;
-  }
 
-  .cta-text {
-    max-width: 100%;
-  }
 }

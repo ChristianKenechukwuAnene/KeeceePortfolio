@@ -28,14 +28,12 @@ function Contact() {
       return;
     }
 
-    emailjs
-      .sendForm(
-        "service_xxxxx",   
-        "template_xxxxx",  
-        formRef.current,
-        "NhWlXiOeadxtfWDFg" 
-        
-      )
+  emailjs.sendForm(
+  "service_k82jd9q",
+  "template_x8k29ab",
+  formRef.current,
+  "NhWlXiOeadxtfWDFg"
+  )
       .then(
         () => {
           dispatch(resetForm());

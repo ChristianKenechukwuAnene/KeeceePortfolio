@@ -70,21 +70,28 @@ function Home() {
                        Also provides a download option.
                        So users can either view or save it. */}
 
-          <div>
-          <button className="resume">
-          {/* Opens PDF in new tab */}
-         <a
-          href="/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="resume-btn view" > 
-        </a> 
-         {/* Forces a download (most desktop browsers respect this) */}
-        <a href="/resume.pdf" download className="resume-btn download">
-          Download Resume
-        </a> 
-          </button>
-        </div>
+         <div className="resume-buttons">
+
+  {/* View Resume */}
+  <a
+    href="/resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="resume-btn view-btn"
+  >
+    View Resume
+  </a>
+
+  {/* Download Resume */}
+  <a
+    href="/resume.pdf"
+    download
+    className="resume-btn download-btn"
+  >
+    Download Resume
+  </a>
+
+</div>
 
 
 
